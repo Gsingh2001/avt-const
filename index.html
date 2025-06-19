@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Avtar Constructions | Gas Safe Engineers & Builders in Darlaston</title>
+    <meta name="description" content="Your trusted, Gas Safe registered engineers and construction company in Darlaston. Specialising in boiler services, landlord gas certificates (CP12), kitchen extensions, and all building work.">
+    <meta name="keywords" content="gas safe engineer darlaston, landlord certificate darlaston, boiler repair ws10, construction darlaston, builders in darlaston">
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #2C3E50;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 120px 0;
+        }
+        .hero-section h1 {
+            font-weight: 700;
+            font-size: 3.5rem;
+        }
+        .btn-warning {
+            background-color: #FFC107;
+            border-color: #FFC107;
+            color: #2C3E50;
+            font-weight: 600;
+            padding: 12px 30px;
+            transition: all 0.3s ease;
+        }
+        .btn-warning:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+        }
+        .section-title {
+            font-weight: 700;
+            color: #2C3E50;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #FFC107;
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .service-card {
+            background: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(44, 62, 80, 0.1);
+        }
+        .service-card .icon {
+            font-size: 3rem;
+            color: #FFC107;
+            margin-bottom: 20px;
+        }
+        .service-card h3 {
+            font-weight: 600;
+            color: #2C3E50;
+        }
+        .testimonial-card {
+            background: #2C3E50;
+            color: white;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        .testimonial-card .stars {
+            color: #FFC107;
+        }
+        .why-us-item i {
+            font-size: 2.5rem;
+            color: #FFC107;
+        }
+        .portfolio-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(44, 62, 80, 0.1);
+        }
+        .portfolio-card img {
+            transition: transform 0.4s ease;
+        }
+        .portfolio-card:hover img {
+            transform: scale(1.1);
+        }
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(44, 62, 80, 0.8);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .portfolio-card:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        .portfolio-overlay h4 {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .gas-safe-logo-sm {
+            height: 40px;
+        }
+        .gas-safe-logo-md {
+            max-width: 150px;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Avtar Constructions",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Darlaston",
+        "postalCode": "WS10 8PN",
+        "addressCountry": "GB"
+      },
+      "telephone": "07714423740",
+      "email": "avtarconstructions@gmail.com",
+      "image": "/images/logo.png",
+      "logo": "/images/logo.png",
+      "priceRange": "$$",
+      "makesOffer": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gas & Electrical Engineering"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Landlord Gas Certificates (CP12)"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Boiler Services"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gas Safety Check"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Design & Build Kitchen Extensions"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Single & Double Story Houses"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "UPVC Windows"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Decorating"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Roofing"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "All Type of Building Work"}}
+      ]
+    }
+    </script>
+</head>
+<body class="bg-light">
+
+    <header class="bg-white shadow-sm sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container align-items-center">
+                <a class="navbar-brand fw-bold fs-4" href="#">
+                    <img src="/images/logo.png" alt="Avtar Constructions Logo" style="height: 40px;" class="me-2">
+                    Avtar Constructions
+                </a>
+                <div class="d-flex align-items-center">
+                    <img src="/images/gas-safe.png" alt="Gas Safe Register Logo" class="gas-safe-logo-sm me-3">
+                    <a href="#contact" class="btn btn-warning d-none d-lg-inline-block">Get a Free Quote</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3">Building Dreams, Ensuring Safety.</h1>
+            <p class="lead my-4">Your trusted, Gas Safe registered construction and energy solutions partner in Darlaston.</p>
+            <a href="#services" class="btn btn-warning btn-lg">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Our Services</h2>
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-file-signature"></i></div>
+                        <h3>Landlord Gas Certificates (CP12)</h3>
+                        <p>Fully certified safety checks by Gas Safe registered engineers for landlords and homeowners.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-fire-burner"></i></div>
+                        <h3>Boiler Services</h3>
+                        <p>Expert installation, maintenance, and repair of advanced boiler systems by certified professionals.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Gas Safety Check</h3>
+                        <p>Thorough gas installation inspections to guarantee compliance and your complete safety.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-kitchen-set"></i></div>
+                        <h3>Design & Build Kitchen Extensions</h3>
+                        <p>Creating beautiful, functional kitchen spaces from the initial concept to final completion.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-home"></i></div>
+                        <h3>Single & Double Story Houses</h3>
+                        <p>Expert design and quality construction for new residential properties and extensions.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-warehouse"></i></div>
+                        <h3>Roofing</h3>
+                        <p>Durable and reliable roofing solutions for total protection and peace of mind.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-hard-hat"></i></div>
+                        <h3>All Building Work</h3>
+                        <p>Comprehensive construction solutions for any project, from renovations to new builds.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-window-maximize"></i></div>
+                        <h3>UPVC Windows</h3>
+                        <p>High-quality window installations for improved energy efficiency, security, and style.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-paint-roller"></i></div>
+                        <h3>Decorating</h3>
+                        <p>Professional interior and exterior finishing touches to bring your space to life.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-title text-center">Why Choose Us?</h2>
+            <div class="row text-center g-4">
+                <div class="col-md-4 why-us-item">
+                    <i class="fas fa-award mb-3"></i>
+                    <h3 class="fw-bold">Quality Craftsmanship</h3>
+                    <p>We take pride in delivering the highest standard of work on every project, guaranteed.</p>
+                </div>
+                <div class="col-md-4 why-us-item">
+                    <i class="fas fa-users mb-3"></i>
+                    <h3 class="fw-bold">Client-Centric Approach</h3>
+                    <p>Clear communication and understanding your vision is our top priority from start to finish.</p>
+                </div>
+                <div class="col-lg-4 why-us-item">
+                    <img src="/images/gas-safe.png" alt="Gas Safe Register Logo" class="gas-safe-logo-md mx-auto mb-3">
+                    <h3 class="fw-bold">Safety Certified</h3>
+                    <p class="mb-2">We are on the Gas Safe Register (Reg No: <strong>123456</strong>). Your safety is our business.</p>
+                    <a href="https://www.gassaferegister.co.uk/" target="_blank" rel="noopener noreferrer">Verify our credentials</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recent-work" class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title text-center">Our Recent Work</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <img src="https://images.pexels.com/photos/3625377/pexels-photo-3625377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="Modern Kitchen Extension">
+                        <div class="portfolio-overlay">
+                            <h4>Kitchen Extension</h4>
+                            <p>Darlaston Project</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="New Roof Installation">
+                        <div class="portfolio-overlay">
+                            <h4>New Roof Installation</h4>
+                            <p>Residential Building</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <img src="https://images.pexels.com/photos/8089255/pexels-photo-8089255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" alt="Boiler Installation">
+                        <div class="portfolio-overlay">
+                            <h4>Boiler & Heating System</h4>
+                            <p>Gas Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-title text-center">What Our Clients Say</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fst-italic">"Avtar Constructions transformed our kitchen. The team was professional, clean, and finished on time. The quality of work is outstanding. Highly recommended!"</p>
+                        <p class="fw-bold mt-3">- John D., Darlaston</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fst-italic">"Needed a landlord gas certificate quickly and they were incredibly efficient and professional. As a Gas Safe registered business, they gave me complete peace of mind."</p>
+                        <p class="fw-bold mt-3">- Sarah P., Homeowner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title text-center">Get a Free, No-Obligation Quote</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form action="#" method="POST" class="text-center">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control p-3" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control p-3" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control p-3" placeholder="Subject (e.g., 'Kitchen Extension')">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control p-3" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white py-5" style="background-color: #2C3E50;">
+        <div class="container text-center">
+            <div class="mb-3">
+                <img src="/images/gas-safe.png" alt="Gas Safe Register Logo" class="gas-safe-logo-md mx-auto">
+            </div>
+            <h3 class="fw-bold">Avtar Constructions</h3>
+            <p>Gas Safe Register No: <strong>123456</strong></p>
+            <p>Darlaston, WS10 8PN, United Kingdom</p>
+            <p>
+                <a href="tel:07714423740" class="text-white text-decoration-none"><strong>Phone:</strong> 07714423740</a> | 
+                <a href="mailto:avtarconstructions@gmail.com" class="text-white text-decoration-none"><strong>Email:</strong> avtarconstructions@gmail.com</a>
+            </p>
+            <p class="mt-4 mb-0">&copy; 2025 Avtar Constructions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
