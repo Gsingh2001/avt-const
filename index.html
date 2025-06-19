@@ -12,11 +12,9 @@
     <link rel="apple-touch-icon" href="images/logo.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
@@ -200,15 +198,13 @@
         <div class="container">
             <h2 class="section-title text-center">Our Services</h2>
             <div class="row g-4 justify-content-center">
-                
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-file-signature"></i></div>
                         <h3>Landlord Gas Certificates (CP12)</h3>
                         <p>Fully certified safety checks by Gas Safe registered engineers for landlords and homeowners.</p>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-fire-burner"></i></div>
@@ -216,7 +212,6 @@
                         <p>Expert installation, maintenance, and repair of advanced boiler systems by certified professionals.</p>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-shield-alt"></i></div>
@@ -224,7 +219,6 @@
                         <p>Thorough gas installation inspections to guarantee compliance and your complete safety.</p>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-kitchen-set"></i></div>
@@ -232,7 +226,6 @@
                         <p>Creating beautiful, functional kitchen spaces from the initial concept to final completion.</p>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-home"></i></div>
@@ -240,7 +233,6 @@
                         <p>Expert design and quality construction for new residential properties and extensions.</p>
                     </div>
                 </div>
-                
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-warehouse"></i></div>
@@ -248,7 +240,6 @@
                         <p>Durable and reliable roofing solutions for total protection and peace of mind.</p>
                     </div>
                 </div>
-                
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-hard-hat"></i></div>
@@ -256,7 +247,6 @@
                         <p>Comprehensive construction solutions for any project, from renovations to new builds.</p>
                     </div>
                 </div>
-                
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-window-maximize"></i></div>
@@ -264,7 +254,6 @@
                         <p>High-quality window installations for improved energy efficiency, security, and style.</p>
                     </div>
                 </div>
-                
                 <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-paint-roller"></i></div>
@@ -272,7 +261,6 @@
                         <p>Professional interior and exterior finishing touches to bring your space to life.</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -336,7 +324,6 @@
         </div>
     </section>
 
-
     <section class="py-5 bg-white">
         <div class="container">
             <h2 class="section-title text-center">What Our Clients Say</h2>
@@ -363,15 +350,14 @@
         </div>
     </section>
 
-
     <section id="contact" class="py-5" style="background-color: #f8f9fa;">
         <div class="container">
             <h2 class="section-title text-center">Get a Free, No-Obligation Quote</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <form action="https://api.web3forms.com/submit" method="POST" class="text-center">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="text-center">
 
-                        <input type="hidden" name="90d47ace-7b17-4d50-8cfa-877c245be3f4" value="">
+                        <input type="hidden" name="access_key" value="90d47ace-7b17-4d50-8cfa-877c245be3f4">
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
@@ -381,6 +367,9 @@
                                 <input type="email" name="email" class="form-control p-3" placeholder="Your Email" required>
                             </div>
                         </div>
+                         <div class="mb-3">
+                            <input type="tel" name="phone" class="form-control p-3" placeholder="Your Phone Number" required>
+                        </div>
                         <div class="mb-3">
                             <input type="text" name="subject" class="form-control p-3" placeholder="Subject (e.g., 'Kitchen Extension')" required>
                         </div>
@@ -388,11 +377,9 @@
                             <textarea name="message" class="form-control p-3" rows="5" placeholder="Tell us about your project..." required></textarea>
                         </div>
                         
-                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
-
                         <button type="submit" class="btn btn-warning btn-lg">Send Message</button>
                     </form>
-                    </div>
+                   </div>
             </div>
         </div>
     </section>
@@ -413,8 +400,74 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-dark">
+                    <h5 class="modal-title" id="successModalLabel">Success!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for your message. We will contact you soon!</p>
+                    <hr>
+                    <p class="mb-1"><strong>Avtar Constructions</strong></p>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i><a href="tel:07714423740" class="text-dark text-decoration-none">07714423740</a></p>
+                    <p class="mb-0"><i class="fas fa-envelope me-2"></i><a href="mailto:avtarconstructions@gmail.com" class="text-dark text-decoration-none">avtarconstructions@gmail.com</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: json
+                })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        // Show the success modal
+                        successModal.show();
+                        // Reset the form
+                        form.reset();
+                    } else {
+                        console.log(response);
+                        // Don't use alert, perhaps show an error message on the page
+                        const errorDiv = document.createElement('div');
+                        errorDiv.className = 'alert alert-danger mt-3';
+                        errorDiv.textContent = 'Something went wrong. Please try again.';
+                        form.prepend(errorDiv);
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                     // Don't use alert, perhaps show an error message on the page
+                    const errorDiv = document.createElement('div');
+                    errorDiv.className = 'alert alert-danger mt-3';
+                    errorDiv.textContent = 'Something went wrong. Please try again.';
+                    form.prepend(errorDiv);
+                });
+        });
+    </script>
 
 </body>
 </html>
