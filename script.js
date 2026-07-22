@@ -54,6 +54,19 @@
     revealEls.forEach(function (el) { el.classList.add('in-view'); });
   }
 
+  /* ---------- Scroll reveal safety net ---------- */
+  /* Belt-and-suspenders: if for any reason an element never gets
+     intersected (e.g. it's in a display:none parent that becomes visible
+     later, or a browser quirk), force it visible after a few seconds so
+     content can never be permanently stuck hidden. */
+  if (!prefersReducedMotion) {
+    window.setTimeout(function () {
+      document.querySelectorAll('.reveal:not(.in-view), .reveal-scale:not(.in-view)').forEach(function (el) {
+        el.classList.add('in-view');
+      });
+    }, 3500);
+  }
+
   /* ---------- Animated counters ---------- */
   var counters = document.querySelectorAll('[data-counter]');
   function animateCounter(el) {
@@ -131,11 +144,17 @@
     });
   }
 
-  /* ---------- Contact form submission ---------- */
+  /* ---------- Contact form submission (Netlify Forms, AJAX) ---------- */
   var form = document.getElementById('contact-form');
   if (form && window.bootstrap) {
     var successModalEl = document.getElementById('successModal');
     var successModal = successModalEl ? new bootstrap.Modal(successModalEl) : null;
+
+    function encodeFormData(data) {
+      return Object.keys(data)
+        .map(function (key) { return encodeURIComponent(key) + '=' + encodeURIComponent(data[key]); })
+        .join('&');
+    }
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -148,28 +167,25 @@
 
       var formData = new FormData(form);
       var object = Object.fromEntries(formData);
-      var json = JSON.stringify(object);
 
-      fetch('https://api.web3forms.com/submit', {
+      fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: json
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encodeFormData(object)
       })
         .then(function (response) {
-          return response.json().then(function (data) {
-            return { status: response.status, data: data };
-          });
-        })
-        .then(function (result) {
-          if (result.status === 200) {
+          if (response.ok) {
             if (successModal) successModal.show();
             form.reset();
           } else {
-            showFormError();
+            // Netlify Forms rejected the AJAX submission — fall back to a
+            // real form submission so the user's data still gets through.
+            form.submit();
           }
         })
         .catch(function () {
-          showFormError();
+          // Network / fetch failure — fall back to a real submission.
+          form.submit();
         })
         .finally(function () {
           if (submitBtn) {
@@ -178,15 +194,5 @@
           }
         });
     });
-
-    function showFormError() {
-      var existing = form.querySelector('.alert-danger');
-      if (existing) existing.remove();
-      var errorDiv = document.createElement('div');
-      errorDiv.className = 'alert alert-danger mt-3';
-      errorDiv.setAttribute('role', 'alert');
-      errorDiv.textContent = 'Something went wrong. Please try again or call us directly.';
-      form.prepend(errorDiv);
-    }
   }
 })();

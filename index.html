@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB" class="no-js">
 
 <head>
+    <script>document.documentElement.classList.replace('no-js','js');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#13202B">
@@ -317,14 +318,27 @@
         }
 
         /* ============ SCROLL REVEAL ============ */
-        .reveal {
+        /* Progressive enhancement: content is fully visible by default.
+           Elements only get hidden-then-faded-in once we've confirmed
+           JavaScript has loaded (html.js class, set at the very top of <head>).
+           This means if a script ever fails to load or is blocked, nothing
+           on the page stays invisible — it just skips the animation. */
+        .reveal, .reveal-scale {
+            opacity: 1;
+            transform: none;
+        }
+        html.js .reveal {
             opacity: 0;
             transform: translateY(28px);
             transition: opacity .7s var(--ease), transform .7s var(--ease);
         }
-        .reveal.in-view { opacity: 1; transform: translateY(0); }
-        .reveal-scale { opacity: 0; transform: scale(0.94); transition: opacity .7s var(--ease), transform .7s var(--ease); }
-        .reveal-scale.in-view { opacity: 1; transform: scale(1); }
+        html.js .reveal.in-view { opacity: 1; transform: translateY(0); }
+        html.js .reveal-scale {
+            opacity: 0;
+            transform: scale(0.94);
+            transition: opacity .7s var(--ease), transform .7s var(--ease);
+        }
+        html.js .reveal-scale.in-view { opacity: 1; transform: scale(1); }
 
         /* ============ HERO ============ */
         .hero-section {
@@ -1374,8 +1388,11 @@
             <div class="row g-4 align-items-stretch">
                 <div class="col-lg-7 reveal">
                     <div class="contact-form-card">
-                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="90d47ace-7b17-4d50-8cfa-877c245be3f4">
+                        <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
+                            <input type="hidden" name="form-name" value="contact">
+                            <p class="visually-hidden" style="position:absolute;left:-9999px;">
+                                <label>Leave this field blank: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+                            </p>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label visually-hidden" for="name">Your Name</label>
