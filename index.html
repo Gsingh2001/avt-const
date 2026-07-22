@@ -4,297 +4,1076 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#13202B">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="Avtar Constructions">
+    <meta name="geo.region" content="GB-WLL">
+    <meta name="geo.placename" content="Darlaston, Walsall">
 
-    <title>Avtar Constructions | Gas Safe Engineers & Builders in Darlaston</title>
+    <title>Gas Safe Engineers & Builders in Darlaston, WS10 | Avtar Constructions</title>
     <meta name="description"
-        content="Your trusted, Gas Safe registered engineers and construction company in Darlaston. Specialising in boiler services, landlord gas certificates (CP12), kitchen extensions, and all building work.">
+        content="Gas Safe registered engineers &amp; builders serving Darlaston, Walsall, Wednesbury &amp; the Black Country. Boiler repairs, landlord gas certificates (CP12), kitchen extensions, roofing &amp; full building work. Free quotes.">
     <meta name="keywords"
-        content="gas safe engineer darlaston, landlord certificate darlaston, boiler repair ws10, construction darlaston, builders in darlaston">
+        content="gas safe engineer darlaston, landlord gas certificate ws10, cp12 walsall, boiler repair darlaston, builders in darlaston, kitchen extension black country, gas safety check">
+    <link rel="canonical" href="https://www.avtarconstructions.co.uk/">
 
-    <link rel="icon" href="https://www.avtarconstructions.co.uk/images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="https://www.avtarconstructions.co.uk/images/logo.png">
+    <!-- Icons -->
+    <link rel="icon" href="images/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
 
-    <meta property="og:title" content="Avtar Constructions | Gas Safe Engineers & Builders in Darlaston">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gas Safe Engineers & Builders in Darlaston | Avtar Constructions">
     <meta property="og:description"
-        content="Trusted Gas Safe engineers for boiler services, landlord certificates, and all construction work.">
-    <meta property="og:image" content="https://www.avtarconstructions.co.uk/images/logo.png">
-    <meta property="og:url" content="https://www.avtarconstructions.co.uk">
+        content="Trusted, Gas Safe registered engineers for boiler services, landlord gas certificates and all construction work across Darlaston &amp; the Black Country.">
+    <meta property="og:image" content="https://www.avtarconstructions.co.uk/images/logo-512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:url" content="https://www.avtarconstructions.co.uk/">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
     <meta property="og:site_name" content="Avtar Constructions">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gas Safe Engineers & Builders in Darlaston | Avtar Constructions">
+    <meta name="twitter:description"
+        content="Boiler services, landlord gas certificates (CP12), kitchen extensions &amp; full building work. Gas Safe registered. Free, no-obligation quotes.">
+    <meta name="twitter:image" content="https://www.avtarconstructions.co.uk/images/logo-512.png">
+
+    <!-- Preconnects for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="image" href="images/logo-240.webp">
+
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-
-
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: #2C3E50;
+        /* ============ DESIGN TOKENS ============ */
+        :root {
+            --navy-950: #101B24;
+            --navy-900: #14232F;
+            --navy-800: #1D3143;
+            --navy-700: #2B4459;
+            --steel-500: #64798A;
+            --steel-300: #A9B7C2;
+            --amber-500: #FFC72C;
+            --amber-600: #E8A800;
+            --brick-500: #C1541F;
+            --brick-600: #A4451A;
+            --off-white: #F7F4EE;
+            --paper: #FCFBF8;
+            --line: #E4DFD4;
+            --ink: #1B2530;
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --shadow-sm: 0 2px 10px rgba(16, 27, 36, 0.06);
+            --shadow-md: 0 10px 30px rgba(16, 27, 36, 0.10);
+            --shadow-lg: 0 20px 50px rgba(16, 27, 36, 0.18);
+            --ease: cubic-bezier(.22, .82, .32, 1);
+            --font-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+            --font-body: 'Inter', system-ui, -apple-system, sans-serif;
         }
 
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.001ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--ink);
+            background: var(--paper);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .display-font {
+            font-family: var(--font-display);
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            color: var(--navy-950);
+        }
+
+        p { line-height: 1.75; color: var(--steel-500); }
+
+        a { color: inherit; }
+
+        .btn { border-radius: var(--radius-sm); font-family: var(--font-body); }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: var(--amber-500);
+            color: var(--navy-950);
+            padding: 12px 20px;
+            z-index: 2000;
+            font-weight: 700;
+            border-radius: 0 0 8px 0;
+        }
+        .skip-link:focus { left: 0; }
+
+        /* ============ HAZARD STRIPE — signature element ============ */
+        .hazard-strip {
+            height: 10px;
+            width: 100%;
+            background: repeating-linear-gradient(135deg,
+                var(--amber-500) 0 22px,
+                var(--navy-950) 22px 44px);
+            background-size: 62px 62px;
+        }
+        .hazard-strip.thin { height: 6px; }
+        @media (prefers-reduced-motion: no-preference) {
+            .hazard-strip.animated {
+                animation: hazard-shift 6s linear infinite;
+            }
+        }
+        @keyframes hazard-shift {
+            from { background-position: 0 0; }
+            to { background-position: 62px 0; }
+        }
+
+        /* ============ BUTTONS ============ */
+        .btn-amber {
+            background: var(--amber-500);
+            border: 2px solid var(--amber-500);
+            color: var(--navy-950);
+            font-weight: 700;
+            padding: 14px 32px;
+            border-radius: var(--radius-sm);
+            transition: transform .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .btn-amber:hover, .btn-amber:focus-visible {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(255, 199, 44, 0.45);
+            background: var(--amber-600);
+            border-color: var(--amber-600);
+            color: var(--navy-950);
+        }
+        .btn-outline-light2 {
+            border: 2px solid rgba(255,255,255,0.55);
+            color: #fff;
+            font-weight: 700;
+            padding: 14px 32px;
+            border-radius: var(--radius-sm);
+            background: transparent;
+            transition: all .25s var(--ease);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .btn-outline-light2:hover, .btn-outline-light2:focus-visible {
+            background: rgba(255,255,255,0.12);
+            border-color: #fff;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        .btn-navy {
+            background: var(--navy-950);
+            color: #fff;
+            font-weight: 700;
+            padding: 14px 32px;
+            border-radius: var(--radius-sm);
+            border: 2px solid var(--navy-950);
+            transition: all .25s var(--ease);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .btn-navy:hover, .btn-navy:focus-visible {
+            background: var(--navy-800);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+            color: #fff;
+        }
+
+        /* ============ HEADER ============ */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(252, 251, 248, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--line);
+            transition: padding .3s var(--ease), box-shadow .3s var(--ease);
+        }
+        .site-header .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0;
+            transition: padding .3s var(--ease);
+        }
+        .site-header.scrolled .nav-inner { padding: 8px 0; }
+        .site-header.scrolled { box-shadow: var(--shadow-sm); }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--navy-950);
+        }
+        .brand img { height: 44px; width: auto; transition: height .3s var(--ease); }
+        .site-header.scrolled .brand img { height: 34px; }
+        .brand-text { display: flex; flex-direction: column; line-height: 1; }
+        .brand-text strong {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+        .brand-text span {
+            font-size: 0.62rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--brick-500);
+            font-weight: 700;
+        }
+
+        .main-nav { display: flex; align-items: center; gap: 28px; }
+        .main-nav a {
+            text-decoration: none;
+            color: var(--navy-800);
+            font-weight: 600;
+            font-size: 0.94rem;
+            position: relative;
+            padding: 4px 0;
+        }
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            left: 0; bottom: -3px;
+            width: 0; height: 2px;
+            background: var(--amber-600);
+            transition: width .25s var(--ease);
+        }
+        .main-nav a:hover::after, .main-nav a:focus-visible::after { width: 100%; }
+
+        .header-ctas { display: flex; align-items: center; gap: 14px; }
+        .call-chip {
+            display: flex; align-items: center; gap: 8px;
+            text-decoration: none; color: var(--navy-950);
+            font-weight: 700; font-size: 0.92rem;
+        }
+        .call-chip i { color: var(--brick-500); }
+
+        .hamburger {
+            display: none;
+            background: none; border: none; cursor: pointer;
+            padding: 8px; width: 44px; height: 44px;
+            flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+        }
+        .hamburger span {
+            display: block; width: 24px; height: 2.5px; background: var(--navy-950);
+            transition: transform .3s var(--ease), opacity .3s var(--ease);
+        }
+        .hamburger.active span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+        .mobile-nav {
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .35s var(--ease);
+            background: var(--paper);
+            border-top: 1px solid var(--line);
+        }
+        .mobile-nav.open { max-height: 480px; }
+        .mobile-nav ul { list-style: none; margin: 0; padding: 12px 0; }
+        .mobile-nav a {
+            display: block; padding: 12px 20px; text-decoration: none;
+            color: var(--navy-900); font-weight: 600; border-bottom: 1px solid var(--line);
+        }
+
+        @media (max-width: 991.98px) {
+            .main-nav { display: none; }
+            .hamburger { display: flex; }
+            .mobile-nav { display: block; }
+            .header-ctas .btn-amber-nav-only { display: none; }
+        }
+
+        /* ============ SCROLL REVEAL ============ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity .7s var(--ease), transform .7s var(--ease);
+        }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        .reveal-scale { opacity: 0; transform: scale(0.94); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+        .reveal-scale.in-view { opacity: 1; transform: scale(1); }
+
+        /* ============ HERO ============ */
         .hero-section {
-            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+            position: relative;
+            background:
+                linear-gradient(100deg, rgba(16, 27, 36, 0.94) 0%, rgba(16, 27, 36, 0.82) 45%, rgba(16, 27, 36, 0.55) 100%),
+                url('https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1000&dpr=1') no-repeat center 30%;
             background-size: cover;
             color: white;
-            padding: 120px 0;
+            padding: 150px 0 90px;
+            overflow: hidden;
         }
+        .hero-section::before {
+            content: '';
+            position: absolute; inset: 0;
+            background-image: linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px),
+                               linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
+            background-size: 42px 42px;
+            pointer-events: none;
+        }
+        .hero-inner { position: relative; z-index: 2; }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: rgba(255, 199, 44, 0.12);
+            border: 1px solid rgba(255, 199, 44, 0.4);
+            color: var(--amber-500);
+            font-weight: 700; font-size: 0.78rem;
+            letter-spacing: 0.14em; text-transform: uppercase;
+            padding: 8px 16px; border-radius: 50px;
+            margin-bottom: 26px;
+        }
+        .eyebrow i { font-size: 0.9rem; }
 
         .hero-section h1 {
-            font-weight: 700;
-            font-size: 3.5rem;
+            font-weight: 800;
+            font-size: clamp(2.6rem, 5.2vw, 4.6rem);
+            line-height: 1.04;
+            color: #fff;
+            text-transform: none;
+            max-width: 16ch;
         }
-
-        .btn-warning {
-            background-color: #FFC107;
-            border-color: #FFC107;
-            color: #2C3E50;
-            font-weight: 600;
-            padding: 12px 30px;
-            transition: all 0.3s ease;
+        .hero-section h1 em {
+            font-style: normal;
+            color: var(--amber-500);
         }
-
-        .btn-warning:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+        .hero-lead {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.82);
+            max-width: 46ch;
+            margin: 22px 0 34px;
+            line-height: 1.7;
         }
+        .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
 
-        .section-title {
-            font-weight: 700;
-            color: #2C3E50;
-            margin-bottom: 50px;
+        .hero-panel {
+            background: rgba(252, 251, 248, 0.98);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            box-shadow: var(--shadow-lg);
             position: relative;
+            z-index: 2;
         }
-
-        .section-title::after {
-            content: '';
-            width: 80px;
-            height: 4px;
-            background: #FFC107;
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
+        .hero-panel-header {
+            display: flex; align-items: center; gap: 12px;
+            margin-bottom: 18px; padding-bottom: 18px;
+            border-bottom: 1px dashed var(--line);
         }
+        .hero-panel-header img { width: 52px; height: 52px; object-fit: contain; }
+        .hero-panel-header strong { display: block; font-size: 1rem; color: var(--navy-950); }
+        .hero-panel-header span { font-size: 0.82rem; color: var(--steel-500); }
+        .hero-fact { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; }
+        .hero-fact i { color: var(--brick-500); width: 20px; margin-top: 4px; }
+        .hero-fact strong { display: block; font-size: 0.92rem; color: var(--navy-900); }
+        .hero-fact span { font-size: 0.82rem; color: var(--steel-500); }
 
-        .service-card {
-            background: #ffffff;
-            border: 1px solid #e9ecef;
-            border-radius: 10px;
-            padding: 30px;
-            text-align: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            height: 100%;
+        /* ============ STATS BAND ============ */
+        .stats-band { background: var(--navy-950); padding: 46px 0; position: relative; }
+        .stat-item { text-align: center; color: #fff; }
+        .stat-num {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            font-weight: 800;
+            color: var(--amber-500);
+            line-height: 1;
         }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 25px rgba(44, 62, 80, 0.1);
-        }
-
-        .service-card .icon {
-            font-size: 3rem;
-            color: #FFC107;
-            margin-bottom: 20px;
-        }
-
-        .service-card h3 {
+        .stat-label {
+            font-size: 0.82rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--steel-300);
+            margin-top: 8px;
             font-weight: 600;
-            color: #2C3E50;
         }
 
-        .testimonial-card {
-            background: #2C3E50;
-            color: white;
-            border-radius: 10px;
-            padding: 30px;
+        /* ============ SECTION TITLES ============ */
+        .eyebrow-sm {
+            display: inline-block;
+            font-weight: 700; font-size: 0.78rem;
+            letter-spacing: 0.16em; text-transform: uppercase;
+            color: var(--brick-500);
+            margin-bottom: 10px;
         }
-
-        .testimonial-card .stars {
-            color: #FFC107;
+        .section-title {
+            font-weight: 800;
+            font-size: clamp(1.9rem, 3.4vw, 2.7rem);
+            color: var(--navy-950);
+            margin-bottom: 18px;
+            line-height: 1.1;
         }
+        .section-intro { max-width: 60ch; color: var(--steel-500); font-family: var(--font-body); }
+        .section-head { margin-bottom: 46px; }
+        .section-head.center { text-align: center; }
+        .section-head.center .section-intro { margin-inline: auto; }
 
-        .why-us-item i {
-            font-size: 2.5rem;
-            color: #FFC107;
-        }
-
-        .portfolio-card {
+        /* ============ SERVICES ============ */
+        .service-card {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-md);
+            padding: 32px 28px;
+            transition: transform .35s var(--ease), box-shadow .35s var(--ease), border-color .35s var(--ease);
+            box-shadow: var(--shadow-sm);
+            height: 100%;
             position: relative;
             overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 8px 25px rgba(44, 62, 80, 0.1);
         }
-
-        .portfolio-card img {
-            transition: transform 0.4s ease;
+        .service-card::before {
+            content: '';
+            position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+            background: var(--amber-500);
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: transform .35s var(--ease);
         }
-
-        .portfolio-card:hover img {
-            transform: scale(1.1);
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
         }
-
-        .portfolio-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(44, 62, 80, 0.8);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.4s ease;
+        .service-card:hover::before { transform: scaleY(1); }
+        .service-card .icon {
+            font-size: 1.7rem;
+            color: var(--navy-950);
+            background: var(--off-white);
+            width: 60px; height: 60px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: var(--radius-sm);
+            margin-bottom: 20px;
+            transition: background .35s var(--ease), color .35s var(--ease), transform .35s var(--ease);
         }
-
-        .portfolio-card:hover .portfolio-overlay {
-            opacity: 1;
+        .service-card:hover .icon {
+            background: var(--amber-500);
+            transform: rotate(-6deg) scale(1.05);
         }
-
-        .portfolio-overlay h4 {
+        .service-card h3 {
+            font-family: var(--font-body);
+            text-transform: none;
             font-weight: 700;
-            margin-bottom: 5px;
+            font-size: 1.08rem;
+            color: var(--navy-950);
+            letter-spacing: 0;
+            margin-bottom: 10px;
+        }
+        .service-card p { font-size: 0.92rem; margin: 0; }
+
+        /* ============ PROCESS ============ */
+        .process-section { background: var(--navy-950); color: #fff; position: relative; overflow: hidden; }
+        .process-section .section-title, .process-section h2 { color: #fff; }
+        .process-section .section-intro { color: var(--steel-300); }
+        .process-step {
+            position: relative;
+            padding: 30px 24px 24px;
+            height: 100%;
+        }
+        .process-step .step-num {
+            font-family: var(--font-display);
+            font-size: 3.4rem;
+            font-weight: 800;
+            color: rgba(255,199,44,0.18);
+            line-height: 1;
+            position: absolute;
+            top: 0; right: 10px;
+        }
+        .process-step i { font-size: 1.6rem; color: var(--amber-500); margin-bottom: 16px; display: block; }
+        .process-step h3 {
+            font-family: var(--font-body); text-transform: none; letter-spacing: 0;
+            color: #fff; font-size: 1.05rem; font-weight: 700; margin-bottom: 8px;
+        }
+        .process-step p { color: var(--steel-300); font-size: 0.9rem; margin: 0; }
+        .process-connector {
+            position: absolute; top: 46px; right: -14px; width: 28px; height: 2px;
+            background: repeating-linear-gradient(90deg, var(--amber-500) 0 6px, transparent 6px 10px);
+            display: none;
+        }
+        @media (min-width: 992px) {
+            .process-connector { display: block; }
         }
 
-        .gas-safe-logo-sm {
-            height: 40px;
+        /* ============ WHY US ============ */
+        .why-us-item {
+            padding: 32px 26px;
+            border-radius: var(--radius-md);
+            background: var(--paper);
+            border: 1px solid var(--line);
+            transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+            height: 100%;
+        }
+        .why-us-item:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+        .why-us-item i { font-size: 2.1rem; color: var(--brick-500); margin-bottom: 16px; display: inline-block; }
+        .why-us-item h3 {
+            font-family: var(--font-body); text-transform: none; letter-spacing: 0;
+            font-weight: 700; font-size: 1.1rem; margin-bottom: 10px; color: var(--navy-950);
+        }
+        .why-us-item p { font-size: 0.92rem; margin-bottom: 0; }
+        .gas-safe-logo-md { max-width: 120px; }
+        .gas-safe-logo-sm { height: 38px; }
+
+        /* ============ SERVICE AREAS ============ */
+        .areas-section { background: var(--off-white); }
+        .area-chip {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--paper);
+            border: 1px solid var(--line);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600; font-size: 0.92rem;
+            color: var(--navy-900);
+            transition: all .25s var(--ease);
+        }
+        .area-chip i { color: var(--amber-600); font-size: 0.85rem; }
+        .area-chip:hover { background: var(--navy-950); color: #fff; border-color: var(--navy-950); transform: translateY(-2px); }
+        .area-chip:hover i { color: var(--amber-500); }
+
+        /* ============ PORTFOLIO ============ */
+        .portfolio-card {
+            position: relative; overflow: hidden; border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            aspect-ratio: 4 / 3;
+        }
+        .portfolio-card img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform .5s var(--ease);
+            display: block;
+        }
+        .portfolio-card:hover img { transform: scale(1.08); }
+        .portfolio-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(0deg, rgba(16,27,36,0.92) 0%, rgba(16,27,36,0.15) 55%, transparent 100%);
+            color: white;
+            display: flex; flex-direction: column; justify-content: flex-end;
+            padding: 22px;
+            opacity: 0; transform: translateY(8px);
+            transition: opacity .35s var(--ease), transform .35s var(--ease);
+        }
+        .portfolio-card:hover .portfolio-overlay { opacity: 1; transform: translateY(0); }
+        .portfolio-overlay .tag {
+            font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+            color: var(--amber-500); font-weight: 700; margin-bottom: 4px;
+        }
+        .portfolio-overlay h4 {
+            font-family: var(--font-body); text-transform: none; letter-spacing: 0;
+            font-weight: 700; margin-bottom: 0; color: #fff; font-size: 1.1rem;
         }
 
-        .gas-safe-logo-md {
-            max-width: 150px;
+        /* ============ TESTIMONIALS ============ */
+        .testimonials-section { background: var(--paper); }
+        .testimonial-card {
+            background: var(--navy-950);
+            color: white;
+            border-radius: var(--radius-md);
+            padding: 34px;
+            height: 100%;
+            position: relative;
+        }
+        .testimonial-card .quote-mark {
+            font-size: 2.6rem; color: var(--amber-500); opacity: .5;
+            font-family: Georgia, serif; line-height: 1; margin-bottom: 4px; display: block;
+        }
+        .testimonial-card .stars { color: var(--amber-500); margin-bottom: 14px; font-size: 0.9rem; }
+        .testimonial-card p.quote { color: rgba(255,255,255,0.9); font-style: normal; }
+        .testimonial-card .author { display: flex; align-items: center; gap: 12px; margin-top: 20px; }
+        .author-avatar {
+            width: 42px; height: 42px; border-radius: 50%;
+            background: var(--amber-500); color: var(--navy-950);
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 800; font-family: var(--font-display); font-size: 1rem;
+        }
+        .author-name { font-weight: 700; font-size: 0.92rem; margin: 0; color: #fff; }
+        .author-loc { font-size: 0.8rem; color: var(--steel-300); margin: 0; }
+
+        /* ============ FAQ ============ */
+        .faq-section { background: var(--off-white); }
+        .faq-item {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: var(--radius-md);
+            margin-bottom: 14px;
+            overflow: hidden;
+        }
+        .faq-question {
+            width: 100%;
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 16px;
+            padding: 20px 24px;
+            background: none; border: none; text-align: left;
+            font-weight: 700; font-size: 1rem; color: var(--navy-950);
+            cursor: pointer;
+            font-family: var(--font-body);
+        }
+        .faq-question .icon-plus {
+            flex-shrink: 0;
+            width: 30px; height: 30px; border-radius: 50%;
+            background: var(--off-white);
+            display: flex; align-items: center; justify-content: center;
+            transition: transform .3s var(--ease), background .3s var(--ease);
+            position: relative;
+        }
+        .faq-question .icon-plus::before, .faq-question .icon-plus::after {
+            content: ''; position: absolute; background: var(--navy-950);
+            transition: transform .3s var(--ease);
+        }
+        .faq-question .icon-plus::before { width: 12px; height: 2px; }
+        .faq-question .icon-plus::after { width: 2px; height: 12px; }
+        .faq-item.open .faq-question .icon-plus { background: var(--amber-500); }
+        .faq-item.open .faq-question .icon-plus::after { transform: scaleY(0); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .4s var(--ease);
+        }
+        .faq-answer-inner { padding: 0 24px 22px; font-size: 0.94rem; color: var(--steel-500); line-height: 1.7; }
+
+        /* ============ CTA BANNER ============ */
+        .cta-banner {
+            background: linear-gradient(120deg, var(--navy-950), var(--navy-800));
+            color: white;
+            padding: 64px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-banner h2 { color: #fff; margin-bottom: 12px; }
+        .cta-banner p { color: var(--steel-300); }
+
+        /* ============ CONTACT ============ */
+        .contact-section { background: var(--paper); }
+        .contact-form-card {
+            background: var(--off-white);
+            border-radius: var(--radius-lg);
+            padding: 44px;
+            box-shadow: var(--shadow-sm);
+        }
+        .form-control {
+            border: 1px solid var(--line);
+            background: var(--paper);
+        }
+        .form-control:focus {
+            border-color: var(--amber-600);
+            box-shadow: 0 0 0 4px rgba(255, 199, 44, 0.18);
+        }
+        .contact-info-card {
+            background: var(--navy-950);
+            color: white;
+            border-radius: var(--radius-lg);
+            padding: 44px;
+            height: 100%;
+        }
+        .contact-info-card h3 { color: #fff; font-family: var(--font-body); text-transform: none; letter-spacing: 0; font-weight: 700; }
+        .contact-info-row { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 22px; }
+        .contact-info-row i {
+            width: 44px; height: 44px; border-radius: var(--radius-sm);
+            background: rgba(255,199,44,0.14); color: var(--amber-500);
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .contact-info-row a, .contact-info-row span { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.94rem; }
+        .contact-info-row strong { display: block; color: #fff; font-size: 0.92rem; margin-bottom: 2px; }
+
+        /* ============ FOOTER ============ */
+        .site-footer { background: var(--navy-950); color: rgba(255,255,255,0.75); }
+        .site-footer h5 { color: #fff; font-family: var(--font-body); text-transform: none; letter-spacing: 0; font-weight: 700; font-size: 1rem; margin-bottom: 18px; }
+        .site-footer a { color: rgba(255,255,255,0.68); text-decoration: none; transition: color .2s; }
+        .site-footer a:hover { color: var(--amber-500); }
+        .footer-links { list-style: none; padding: 0; margin: 0; }
+        .footer-links li { margin-bottom: 10px; font-size: 0.92rem; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; padding-top: 24px; font-size: 0.84rem; }
+        .social-row { display: flex; gap: 12px; margin-top: 6px; }
+        .social-row a {
+            width: 38px; height: 38px; border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            display: flex; align-items: center; justify-content: center;
+        }
+        .social-row a:hover { background: var(--amber-500); color: var(--navy-950); }
+
+        /* ============ STICKY MOBILE CALL BAR ============ */
+        .mobile-cta-bar {
+            display: none;
+            position: fixed; left: 0; right: 0; bottom: 0; z-index: 1200;
+            background: var(--navy-950);
+            padding: 10px 16px;
+            box-shadow: 0 -6px 20px rgba(0,0,0,0.25);
+        }
+        .mobile-cta-bar .row { --bs-gutter-x: 10px; }
+        @media (max-width: 767.98px) {
+            .mobile-cta-bar { display: block; }
+            body { padding-bottom: 68px; }
+        }
+
+        /* ============ BACK TO TOP ============ */
+        .back-to-top {
+            position: fixed; right: 22px; bottom: 90px; z-index: 1100;
+            width: 46px; height: 46px; border-radius: 50%;
+            background: var(--navy-950); color: var(--amber-500);
+            display: flex; align-items: center; justify-content: center;
+            border: none; box-shadow: var(--shadow-md);
+            opacity: 0; visibility: hidden; transform: translateY(10px);
+            transition: all .3s var(--ease);
+        }
+        .back-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+        @media (max-width: 767.98px) { .back-to-top { bottom: 82px; right: 16px; } }
+
+        /* ============ COUNT-UP TRIGGER HELPERS ============ */
+        [data-counter] { display: inline-block; }
+
+        /* ============ MISC ============ */
+        ::selection { background: var(--amber-500); color: var(--navy-950); }
+        .divider-wave { color: var(--paper); }
+        .badge-soft {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--off-white); border: 1px solid var(--line);
+            padding: 8px 16px; border-radius: 50px; font-size: 0.82rem; font-weight: 600; color: var(--navy-800);
         }
     </style>
 
+    <!-- Structured Data: Local Business -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "GeneralContractor",
+      "@id": "https://www.avtarconstructions.co.uk/#business",
       "name": "Avtar Constructions",
+      "alternateName": "Avtar Constructions Gas Safe Engineers & Builders",
+      "description": "Gas Safe registered engineers and construction company serving Darlaston and the Black Country. Boiler services, landlord gas certificates (CP12), kitchen extensions, roofing and all building work.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Darlaston",
+        "addressRegion": "West Midlands",
         "postalCode": "WS10 8PN",
         "addressCountry": "GB"
       },
-      "telephone": "07714423740",
+      "telephone": "+447714423740",
       "email": "avtarconstructions@gmail.com",
-      "image": "https://www.avtarconstructions.co.uk/images/logo.png",
-      "logo": "https://www.avtarconstructions.co.uk/images/logo.png",
-      "url": "https://www.avtarconstructions.co.uk",
-      "priceRange": "$$",
-      "makesOffer": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gas & Electrical Engineering"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Landlord Gas Certificates (CP12)"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Boiler Services"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gas Safety Check"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Design & Build Kitchen Extensions"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Single & Double Story Houses"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "UPVC Windows"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Decorating"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Roofing"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "All Type of Building Work"}}
+      "image": "https://www.avtarconstructions.co.uk/images/logo-512.png",
+      "logo": "https://www.avtarconstructions.co.uk/images/logo-512.png",
+      "url": "https://www.avtarconstructions.co.uk/",
+      "priceRange": "££",
+      "areaServed": [
+        {"@type": "City", "name": "Darlaston"},
+        {"@type": "City", "name": "Walsall"},
+        {"@type": "City", "name": "Wednesbury"},
+        {"@type": "City", "name": "Willenhall"},
+        {"@type": "City", "name": "West Bromwich"},
+        {"@type": "City", "name": "Wolverhampton"},
+        {"@type": "City", "name": "Bilston"}
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday"],
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Landlord Gas Safety Certificates (CP12)"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Boiler Installation, Repair & Servicing"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gas Safety Checks"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Design & Build Kitchen Extensions"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Single & Double Storey House Extensions"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "UPVC Window Installation"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Interior & Exterior Decorating"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Roofing"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "General Building Work"}}
+        ]
+      }
+    }
+    </script>
+
+    <!-- Structured Data: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are Avtar Constructions Gas Safe registered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Avtar Constructions is a Gas Safe registered business, which means our engineers are legally qualified to carry out gas work. You can verify any Gas Safe engineer's registration directly on the official Gas Safe Register website."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a Landlord Gas Safety Certificate (CP12) and do I need one?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Landlord Gas Safety Certificate, often called a CP12, is a legal record confirming that the gas appliances, pipework and flues in a rental property have been checked by a Gas Safe registered engineer and are safe to use. UK law requires landlords to have this check carried out every 12 months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a gas safety check or boiler service cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Costs depend on the property size, number of appliances and the type of work required. We provide a free, no-obligation quote so you know the exact price before any work begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer free quotes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, every quote is free and comes with no obligation. Simply get in touch with details of your project and we will get back to you promptly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas do you cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We're based in Darlaston, WS10, and cover the surrounding Black Country area including Walsall, Wednesbury, Willenhall, West Bromwich, Wolverhampton and Bilston."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle full building projects as well as gas work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Alongside Gas Safe engineering services, we design and build kitchen extensions, single and double storey house extensions, roofing, UPVC windows, decorating and general building work."
+          }
+        }
       ]
     }
     </script>
 </head>
 
-<body class="bg-light">
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header class="bg-white shadow-sm sticky-top">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container align-items-center">
-                <a class="navbar-brand fw-bold fs-4" href="#">
-                    <img src="images/logo.png" alt="Avtar Constructions Logo" style="height: 40px;" class="me-2">
-                    Avtar Constructions
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-inner">
+            <a class="brand" href="#top" aria-label="Avtar Constructions home">
+                <img src="images/logo-240.webp" alt="Avtar Constructions logo" width="44" height="44" fetchpriority="high">
+                <span class="brand-text">
+                    <strong>Avtar Constructions</strong>
+                    <span>Gas Safe · Darlaston</span>
+                </span>
+            </a>
+
+            <nav class="main-nav" aria-label="Primary">
+                <a href="#services">Services</a>
+                <a href="#process">How We Work</a>
+                <a href="#work">Our Work</a>
+                <a href="#areas">Areas</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-ctas">
+                <a href="tel:07714423740" class="call-chip d-none d-md-flex">
+                    <i class="fas fa-phone"></i> 07714 423740
                 </a>
-                <div class="d-flex align-items-center">
-                    <img src="images/gas-safe.png" alt="Gas Safe Register Logo" class="gas-safe-logo-sm me-3">
-                    <a href="#contact" class="btn btn-warning d-none d-lg-inline-block">Get a Free Quote</a>
-                </div>
+                <a href="#contact" class="btn-amber d-none d-lg-inline-flex btn-amber-nav-only">
+                    Get a Free Quote
+                </a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
-        </nav>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">How We Work</a></li>
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#areas">Areas We Cover</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:07714423740"><i class="fas fa-phone me-2"></i>07714 423740</a></li>
+            </ul>
+        </div>
     </header>
 
-    <section class="hero-section text-center">
+    <main id="main-content">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero-section" id="top">
+        <div class="container hero-inner">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <div class="eyebrow reveal in-view">
+                        <i class="fas fa-shield-check"></i> Gas Safe Registered &middot; Darlaston, WS10
+                    </div>
+                    <h1 class="reveal in-view">Building Dreams, <em>Ensuring&nbsp;Safety.</em></h1>
+                    <p class="hero-lead reveal in-view" style="transition-delay:.1s">
+                        Your trusted, Gas Safe registered construction and energy solutions partner in Darlaston &mdash;
+                        covering boiler care, landlord gas certificates, extensions and every kind of building work.
+                    </p>
+                    <div class="hero-ctas reveal in-view" style="transition-delay:.2s">
+                        <a href="#contact" class="btn-amber">
+                            <i class="fas fa-pen-to-square"></i> Get a Free Quote
+                        </a>
+                        <a href="tel:07714423740" class="btn-outline-light2">
+                            <i class="fas fa-phone"></i> Call 07714 423740
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-panel reveal in-view" style="transition-delay:.25s">
+                        <div class="hero-panel-header">
+                            <img src="images/gas-safe-150.webp" alt="Gas Safe Register logo" width="52" height="52" loading="lazy">
+                            <div>
+                                <strong>Gas Safe Registered</strong>
+                                <span>Reg No: 123456</span>
+                            </div>
+                        </div>
+                        <div class="hero-fact">
+                            <i class="fas fa-file-signature"></i>
+                            <div><strong>Landlord Gas Certificates</strong><span>CP12 checks completed on-site</span></div>
+                        </div>
+                        <div class="hero-fact">
+                            <i class="fas fa-fire-burner"></i>
+                            <div><strong>Boiler Care</strong><span>Installation, service &amp; repair</span></div>
+                        </div>
+                        <div class="hero-fact">
+                            <i class="fas fa-hard-hat"></i>
+                            <div><strong>Full Building Work</strong><span>Extensions, roofing &amp; more</span></div>
+                        </div>
+                        <a href="#contact" class="btn-navy w-100 justify-content-center mt-3">
+                            Request a Callback <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="hazard-strip animated" role="presentation"></div>
+
+    <!-- ============ STATS BAND ============ -->
+    <section class="stats-band">
         <div class="container">
-            <h1 class="display-3">Building Dreams, Ensuring Safety.</h1>
-            <p class="lead my-4">Your trusted, Gas Safe registered construction and energy solutions partner in
-                Darlaston.</p>
-            <a href="#services" class="btn btn-warning btn-lg">Explore Our Services</a>
+            <div class="row g-4">
+                <div class="col-6 col-lg-3 stat-item reveal">
+                    <div class="stat-num"><span data-counter data-target="9">0</span>+</div>
+                    <div class="stat-label">Specialist Services</div>
+                </div>
+                <div class="col-6 col-lg-3 stat-item reveal" style="transition-delay:.08s">
+                    <div class="stat-num"><span data-counter data-target="100">0</span>%</div>
+                    <div class="stat-label">Gas Safe Compliant</div>
+                </div>
+                <div class="col-6 col-lg-3 stat-item reveal" style="transition-delay:.16s">
+                    <div class="stat-num"><span data-counter data-target="7">0</span>+</div>
+                    <div class="stat-label">Areas Covered</div>
+                </div>
+                <div class="col-6 col-lg-3 stat-item reveal" style="transition-delay:.24s">
+                    <div class="stat-num" style="font-size:clamp(1.6rem,2.6vw,2.2rem);">Free</div>
+                    <div class="stat-label">No-Obligation Quotes</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="services" class="py-5">
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="py-5 py-lg-6" style="padding-top:88px;padding-bottom:88px;">
         <div class="container">
-            <h2 class="section-title text-center">Our Services</h2>
+            <div class="section-head center reveal">
+                <span class="eyebrow-sm">What We Do</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-intro">From certified gas safety checks to complete home extensions &mdash; one trusted, Gas Safe registered team for every stage of your project.</p>
+            </div>
             <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch reveal">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-file-signature"></i></div>
                         <h3>Landlord Gas Certificates (CP12)</h3>
-                        <p>Fully certified safety checks by Gas Safe registered engineers for landlords and homeowners.
-                        </p>
+                        <p>Fully certified safety checks by Gas Safe registered engineers for landlords and homeowners.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch reveal" style="transition-delay:.06s">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-fire-burner"></i></div>
                         <h3>Boiler Services</h3>
-                        <p>Expert installation, maintenance, and repair of advanced boiler systems by certified
-                            professionals.</p>
+                        <p>Expert installation, maintenance, and repair of advanced boiler systems by certified professionals.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch reveal" style="transition-delay:.12s">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-shield-alt"></i></div>
                         <h3>Gas Safety Check</h3>
                         <p>Thorough gas installation inspections to guarantee compliance and your complete safety.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch reveal">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-kitchen-set"></i></div>
-                        <h3>Design & Build Kitchen Extensions</h3>
-                        <p>Creating beautiful, functional kitchen spaces from the initial concept to final completion.
-                        </p>
+                        <h3>Design &amp; Build Kitchen Extensions</h3>
+                        <p>Creating beautiful, functional kitchen spaces from the initial concept to final completion.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch reveal" style="transition-delay:.06s">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-home"></i></div>
-                        <h3>Single & Double Story Houses</h3>
+                        <h3>Single &amp; Double Storey Houses</h3>
                         <p>Expert design and quality construction for new residential properties and extensions.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch reveal" style="transition-delay:.12s">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-warehouse"></i></div>
                         <h3>Roofing</h3>
                         <p>Durable and reliable roofing solutions for total protection and peace of mind.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch reveal">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-hard-hat"></i></div>
                         <h3>All Building Work</h3>
                         <p>Comprehensive construction solutions for any project, from renovations to new builds.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch reveal" style="transition-delay:.06s">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-window-maximize"></i></div>
                         <h3>UPVC Windows</h3>
                         <p>High-quality window installations for improved energy efficiency, security, and style.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch reveal" style="transition-delay:.12s">
                     <div class="service-card">
                         <div class="icon"><i class="fas fa-paint-roller"></i></div>
                         <h3>Decorating</h3>
@@ -305,63 +1084,146 @@
         </div>
     </section>
 
-    <section class="py-5 bg-white">
+    <!-- ============ PROCESS ============ -->
+    <section id="process" class="process-section py-5" style="padding-top:88px;padding-bottom:88px;">
         <div class="container">
-            <h2 class="section-title text-center">Why Choose Us?</h2>
+            <div class="section-head center reveal">
+                <span class="eyebrow-sm" style="color:var(--amber-500);">How We Work</span>
+                <h2 class="section-title">From Enquiry to Completion</h2>
+                <p class="section-intro">A straightforward, four-step process so you always know what happens next.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 reveal">
+                    <div class="process-step">
+                        <span class="step-num">01</span>
+                        <i class="fas fa-comments"></i>
+                        <h3>Get in Touch</h3>
+                        <p>Tell us about your project via the form, phone or email &mdash; whatever suits you best.</p>
+                        <span class="process-connector"></span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 reveal" style="transition-delay:.08s">
+                    <div class="process-step">
+                        <span class="step-num">02</span>
+                        <i class="fas fa-clipboard-check"></i>
+                        <h3>Free Quote &amp; Survey</h3>
+                        <p>We assess the job and provide a clear, free, no-obligation quote with no hidden costs.</p>
+                        <span class="process-connector"></span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 reveal" style="transition-delay:.16s">
+                    <div class="process-step">
+                        <span class="step-num">03</span>
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Book Your Date</h3>
+                        <p>We agree a schedule that works for you and confirm every detail before we start.</p>
+                        <span class="process-connector"></span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 reveal" style="transition-delay:.24s">
+                    <div class="process-step">
+                        <span class="step-num">04</span>
+                        <i class="fas fa-certificate"></i>
+                        <h3>Certified Completion</h3>
+                        <p>Work finished to a high standard, with certification and paperwork provided where needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="py-5" style="padding-top:88px;padding-bottom:88px;">
+        <div class="container">
+            <div class="section-head center reveal">
+                <span class="eyebrow-sm">Our Promise</span>
+                <h2 class="section-title">Why Choose Us?</h2>
+            </div>
             <div class="row text-center g-4">
-                <div class="col-md-4 why-us-item">
-                    <i class="fas fa-award mb-3"></i>
-                    <h3 class="fw-bold">Quality Craftsmanship</h3>
-                    <p>We take pride in delivering the highest standard of work on every project, guaranteed.</p>
+                <div class="col-md-4 reveal">
+                    <div class="why-us-item">
+                        <i class="fas fa-award"></i>
+                        <h3>Quality Craftsmanship</h3>
+                        <p>We take pride in delivering the highest standard of work on every project, guaranteed.</p>
+                    </div>
                 </div>
-                <div class="col-md-4 why-us-item">
-                    <i class="fas fa-users mb-3"></i>
-                    <h3 class="fw-bold">Client-Centric Approach</h3>
-                    <p>Clear communication and understanding your vision is our top priority from start to finish.</p>
+                <div class="col-md-4 reveal" style="transition-delay:.08s">
+                    <div class="why-us-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Client-Centric Approach</h3>
+                        <p>Clear communication and understanding your vision is our top priority from start to finish.</p>
+                    </div>
                 </div>
-                <div class="col-lg-4 why-us-item">
-                    <img src="images/gas-safe.png" alt="Gas Safe Register Logo" class="gas-safe-logo-md mx-auto mb-3">
-                    <h3 class="fw-bold">Safety Certified</h3>
-                    <p class="mb-2">We are on the Gas Safe Register (Reg No: <strong>123456</strong>). Your safety is
-                        our business.</p>
-                    <a href="https://www.gassaferegister.co.uk/" target="_blank" rel="noopener noreferrer">Verify our
-                        credentials</a>
+                <div class="col-md-4 reveal" style="transition-delay:.16s">
+                    <div class="why-us-item">
+                        <img src="images/gas-safe-150.webp" alt="Gas Safe Register logo" class="gas-safe-logo-md mx-auto mb-3" loading="lazy" width="120" height="134">
+                        <h3>Safety Certified</h3>
+                        <p class="mb-2">We are on the Gas Safe Register (Reg No: <strong>123456</strong>). Your safety is our business.</p>
+                        <a href="https://www.gassaferegister.co.uk/" target="_blank" rel="noopener noreferrer" class="fw-semibold" style="color:var(--brick-500);">
+                            Verify our credentials <i class="fas fa-arrow-up-right-from-square fa-xs"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="recent-work" class="py-5" style="background-color: #f8f9fa;">
+    <!-- ============ SERVICE AREAS ============ -->
+    <section id="areas" class="areas-section py-5" style="padding-top:80px;padding-bottom:80px;">
         <div class="container">
-            <h2 class="section-title text-center">Our Recent Work</h2>
+            <div class="section-head center reveal">
+                <span class="eyebrow-sm">Local &amp; Trusted</span>
+                <h2 class="section-title">Areas We Cover</h2>
+                <p class="section-intro">Based in Darlaston, WS10, and proud to serve homes and landlords across the Black Country.</p>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-3 reveal">
+                <span class="area-chip"><i class="fas fa-location-dot"></i> Darlaston</span>
+                <span class="area-chip"><i class="fas fa-location-dot"></i> Walsall</span>
+                <span class="area-chip"><i class="fas fa-location-dot"></i> Wednesbury</span>
+                <span class="area-chip"><i class="fas fa-location-dot"></i> Willenhall</span>
+                <span class="area-chip"><i class="fas fa-location-dot"></i> West Bromwich</span>
+                <span class="area-chip"><i class="fas fa-location-dot"></i> Wolverhampton</span>
+                <span class="area-chip"><i class="fas fa-location-dot"></i> Bilston</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ RECENT WORK ============ -->
+    <section id="work" class="py-5" style="background-color:var(--paper);padding-top:88px;padding-bottom:88px;">
+        <div class="container">
+            <div class="section-head center reveal">
+                <span class="eyebrow-sm">Portfolio</span>
+                <h2 class="section-title">Our Recent Work</h2>
+                <p class="section-intro">A snapshot of recent projects completed across Darlaston and the surrounding area.</p>
+            </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 reveal-scale">
                     <div class="portfolio-card">
-                        <img src="https://images.pexels.com/photos/3625377/pexels-photo-3625377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            class="img-fluid" alt="Modern Kitchen Extension">
+                        <img src="https://images.pexels.com/photos/3625377/pexels-photo-3625377.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1"
+                            alt="Modern kitchen extension completed in Darlaston" loading="lazy" width="800" height="600">
                         <div class="portfolio-overlay">
+                            <span class="tag">Design &amp; Build</span>
                             <h4>Kitchen Extension</h4>
-                            <p>Darlaston Project</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 reveal-scale" style="transition-delay:.08s">
                     <div class="portfolio-card">
-                        <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            class="img-fluid" alt="New Roof Installation">
+                        <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1"
+                            alt="New roof installation on a residential building" loading="lazy" width="800" height="600">
                         <div class="portfolio-overlay">
+                            <span class="tag">Roofing</span>
                             <h4>New Roof Installation</h4>
-                            <p>Residential Building</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 reveal-scale" style="transition-delay:.16s">
                     <div class="portfolio-card">
-                        <img src="https://images.pexels.com/photos/8089255/pexels-photo-8089255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            class="img-fluid" alt="Boiler Installation">
+                        <img src="https://images.pexels.com/photos/8089255/pexels-photo-8089255.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1"
+                            alt="Gas Safe engineer completing a boiler installation" loading="lazy" width="800" height="600">
                         <div class="portfolio-overlay">
-                            <h4>Boiler & Heating System</h4>
-                            <p>Gas Engineering</p>
+                            <span class="tag">Gas Engineering</span>
+                            <h4>Boiler &amp; Heating System</h4>
                         </div>
                     </div>
                 </div>
@@ -369,98 +1231,290 @@
         </div>
     </section>
 
-    <section class="py-5 bg-white">
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials-section py-5" style="padding-top:88px;padding-bottom:88px;">
         <div class="container">
-            <h2 class="section-title text-center">What Our Clients Say</h2>
+            <div class="section-head center reveal">
+                <span class="eyebrow-sm">Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
             <div class="row g-4">
-                <div class="col-md-6">
+                <div class="col-md-6 reveal">
                     <div class="testimonial-card">
-                        <div class="stars mb-2">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span class="quote-mark">&ldquo;</span>
+                        <div class="stars" aria-hidden="true">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="fst-italic">"Avtar Constructions transformed our kitchen. The team was professional,
-                            clean, and finished on time. The quality of work is outstanding. Highly recommended!"</p>
-                        <p class="fw-bold mt-3">- John D., Darlaston</p>
+                        <p class="quote">Avtar Constructions transformed our kitchen. The team was professional, clean, and finished on time. The quality of work is outstanding. Highly recommended!</p>
+                        <div class="author">
+                            <div class="author-avatar">JD</div>
+                            <div>
+                                <p class="author-name">John D.</p>
+                                <p class="author-loc">Darlaston</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 reveal" style="transition-delay:.1s">
                     <div class="testimonial-card">
-                        <div class="stars mb-2">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span class="quote-mark">&ldquo;</span>
+                        <div class="stars" aria-hidden="true">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="fst-italic">"Needed a landlord gas certificate quickly and they were incredibly
-                            efficient and professional. As a Gas Safe registered business, they gave me complete peace
-                            of mind."</p>
-                        <p class="fw-bold mt-3">- Sarah P., Homeowner</p>
+                        <p class="quote">Needed a landlord gas certificate quickly and they were incredibly efficient and professional. As a Gas Safe registered business, they gave me complete peace of mind.</p>
+                        <div class="author">
+                            <div class="author-avatar">SP</div>
+                            <div>
+                                <p class="author-name">Sarah P.</p>
+                                <p class="author-loc">Homeowner</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-5" style="background-color: #f8f9fa;">
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="faq-section py-5" style="padding-top:88px;padding-bottom:88px;">
         <div class="container">
-            <h2 class="section-title text-center">Get a Free, No-Obligation Quote</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="text-center">
+                    <div class="section-head center reveal">
+                        <span class="eyebrow-sm">Questions</span>
+                        <h2 class="section-title">Frequently Asked Questions</h2>
+                    </div>
 
-                        <input type="hidden" name="access_key" value="90d47ace-7b17-4d50-8cfa-877c245be3f4">
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            Are Avtar Constructions Gas Safe registered?
+                            <span class="icon-plus"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes. Avtar Constructions is a Gas Safe registered business, meaning our engineers are legally qualified to carry out gas work. You can verify any Gas Safe engineer's registration directly on the official Gas Safe Register website.</div>
+                        </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <input type="text" name="name" class="form-control p-3" placeholder="Your Name"
-                                    required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <input type="email" name="email" class="form-control p-3" placeholder="Your Email"
-                                    required>
-                            </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            What is a Landlord Gas Safety Certificate (CP12) and do I need one?
+                            <span class="icon-plus"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">A Landlord Gas Safety Certificate, often called a CP12, is a legal record confirming the gas appliances, pipework and flues in a rental property have been checked by a Gas Safe registered engineer and are safe to use. UK law requires landlords to have this check carried out every 12 months.</div>
                         </div>
-                        <div class="mb-3">
-                            <input type="tel" name="phone" class="form-control p-3" placeholder="Your Phone Number"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" name="subject" class="form-control p-3"
-                                placeholder="Subject (e.g., 'Kitchen Extension')" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea name="message" class="form-control p-3" rows="5"
-                                placeholder="Tell us about your project..." required></textarea>
-                        </div>
+                    </div>
 
-                        <button type="submit" class="btn btn-warning btn-lg">Send Message</button>
-                    </form>
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            How much does a gas safety check or boiler service cost?
+                            <span class="icon-plus"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Costs depend on the property size, number of appliances and the type of work required. We provide a free, no-obligation quote so you know the exact price before any work begins.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you offer free quotes?
+                            <span class="icon-plus"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes, every quote is free and comes with no obligation. Simply get in touch with details of your project and we'll get back to you promptly.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            What areas do you cover?
+                            <span class="icon-plus"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">We're based in Darlaston, WS10, and cover the surrounding Black Country area including Walsall, Wednesbury, Willenhall, West Bromwich, Wolverhampton and Bilston.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you handle full building projects as well as gas work?
+                            <span class="icon-plus"></span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes. Alongside our Gas Safe engineering services, we design and build kitchen extensions, single and double storey house extensions, roofing, UPVC windows, decorating and general building work.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="text-white py-5" style="background-color: #2C3E50;">
-        <div class="container text-center">
-            <div class="mb-3">
-                <img src="images/gas-safe.png" alt="Gas Safe Register Logo" class="gas-safe-logo-md mx-auto">
+    <!-- ============ CTA BANNER ============ -->
+    <div class="hazard-strip thin" role="presentation"></div>
+    <section class="cta-banner text-center">
+        <div class="container reveal">
+            <h2 class="h1">Ready to Start Your Project?</h2>
+            <p class="mb-4 fs-5">Get a free, no-obligation quote from your local Gas Safe registered team today.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#contact" class="btn-amber"><i class="fas fa-pen-to-square"></i> Get a Free Quote</a>
+                <a href="tel:07714423740" class="btn-outline-light2"><i class="fas fa-phone"></i> 07714 423740</a>
             </div>
-            <h3 class="fw-bold">Avtar Constructions</h3>
-            <p>Gas Safe Register No: <strong>123456</strong></p>
-            <p>Darlaston, WS10 8PN, United Kingdom</p>
-            <p>
-                <a href="tel:07714423740" class="text-white text-decoration-none"><strong>Phone:</strong>
-                    07714423740</a> |
-                <a href="mailto:avtarconstructions@gmail.com"
-                    class="text-white text-decoration-none"><strong>Email:</strong> avtarconstructions@gmail.com</a>
-            </p>
-            <p class="mt-4 mb-0">&copy; 2025 Avtar Constructions. All Rights Reserved.</p>
+        </div>
+    </section>
+    <div class="hazard-strip thin" role="presentation"></div>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact-section py-5" style="padding-top:88px;padding-bottom:88px;">
+        <div class="container">
+            <div class="section-head center reveal">
+                <span class="eyebrow-sm">Get In Touch</span>
+                <h2 class="section-title">Get a Free, No-Obligation Quote</h2>
+                <p class="section-intro">Tell us about your project and we'll get back to you promptly.</p>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-7 reveal">
+                    <div class="contact-form-card">
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="90d47ace-7b17-4d50-8cfa-877c245be3f4">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label visually-hidden" for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" class="form-control p-3" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label visually-hidden" for="email">Your Email</label>
+                                    <input type="email" id="email" name="email" class="form-control p-3" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label visually-hidden" for="phone">Your Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control p-3" placeholder="Your Phone Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label visually-hidden" for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control p-3" placeholder="Subject (e.g., 'Kitchen Extension')" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label visually-hidden" for="message">Message</label>
+                                <textarea id="message" name="message" class="form-control p-3" rows="5" placeholder="Tell us about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-amber w-100 justify-content-center">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 reveal" style="transition-delay:.1s">
+                    <div class="contact-info-card">
+                        <h3 class="mb-4">Contact Details</h3>
+                        <div class="contact-info-row">
+                            <i class="fas fa-phone"></i>
+                            <div><strong>Phone</strong><a href="tel:07714423740">07714 423740</a></div>
+                        </div>
+                        <div class="contact-info-row">
+                            <i class="fas fa-envelope"></i>
+                            <div><strong>Email</strong><a href="mailto:avtarconstructions@gmail.com">avtarconstructions@gmail.com</a></div>
+                        </div>
+                        <div class="contact-info-row">
+                            <i class="fas fa-location-dot"></i>
+                            <div><strong>Location</strong><span>Darlaston, WS10 8PN, United Kingdom</span></div>
+                        </div>
+                        <div class="contact-info-row">
+                            <i class="fas fa-clock"></i>
+                            <div><strong>Hours</strong><span>Mon&ndash;Fri 8:00&ndash;18:00, Sat 9:00&ndash;14:00</span></div>
+                        </div>
+                        <div class="contact-info-row" style="margin-bottom:0;">
+                            <i class="fas fa-shield-check"></i>
+                            <div><strong>Gas Safe Reg. No.</strong><span>123456</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="#top" class="brand mb-3" style="color:#fff;">
+                        <img src="images/logo-120.png" alt="Avtar Constructions logo" width="40" height="40" loading="lazy">
+                        <span class="brand-text">
+                            <strong style="color:#fff;">Avtar Constructions</strong>
+                            <span>Gas Safe &middot; Darlaston</span>
+                        </span>
+                    </a>
+                    <p class="mt-3" style="color:rgba(255,255,255,0.6);font-size:0.92rem;">Gas Safe registered engineers and builders serving Darlaston and the Black Country. Quality craftsmanship, honest quotes, safety first.</p>
+                    <img src="images/gas-safe-150.webp" alt="Gas Safe Register logo" width="70" height="78" loading="lazy" style="margin-top:8px;">
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#process">How We Work</a></li>
+                        <li><a href="#work">Our Work</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#services">Gas Safety Checks</a></li>
+                        <li><a href="#services">Landlord Certificates</a></li>
+                        <li><a href="#services">Boiler Services</a></li>
+                        <li><a href="#services">Kitchen Extensions</a></li>
+                        <li><a href="#services">Roofing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Areas Covered</h5>
+                    <ul class="footer-links">
+                        <li><a href="#areas">Darlaston &amp; Walsall</a></li>
+                        <li><a href="#areas">Wednesbury &amp; Willenhall</a></li>
+                        <li><a href="#areas">West Bromwich</a></li>
+                        <li><a href="#areas">Wolverhampton &amp; Bilston</a></li>
+                    </ul>
+                    <div class="social-row" aria-label="Social media links">
+                        <a href="tel:07714423740" aria-label="Call us"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:avtarconstructions@gmail.com" aria-label="Email us"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-1">Avtar Constructions &middot; Gas Safe Register No: <strong>123456</strong> &middot; Darlaston, WS10 8PN, United Kingdom</p>
+                <p class="mb-0">&copy; <span id="year">2026</span> Avtar Constructions. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <!-- ============ MOBILE STICKY CTA BAR ============ -->
+    <div class="mobile-cta-bar">
+        <div class="row g-2">
+            <div class="col-6">
+                <a href="tel:07714423740" class="btn-navy w-100 justify-content-center" style="padding:12px 10px;font-size:0.88rem;">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="#contact" class="btn-amber w-100 justify-content-center" style="padding:12px 10px;font-size:0.88rem;">
+                    <i class="fas fa-pen-to-square"></i> Free Quote
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header bg-warning text-dark">
+                <div class="modal-header" style="background:var(--amber-500);color:var(--navy-950);">
                     <h5 class="modal-title" id="successModalLabel">Success!</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -468,66 +1522,18 @@
                     <p>Thank you for your message. We will contact you soon!</p>
                     <hr>
                     <p class="mb-1"><strong>Avtar Constructions</strong></p>
-                    <p class="mb-1"><i class="fas fa-phone me-2"></i><a href="tel:07714423740"
-                            class="text-dark text-decoration-none">07714423740</a></p>
-                    <p class="mb-0"><i class="fas fa-envelope me-2"></i><a href="mailto:avtarconstructions@gmail.com"
-                            class="text-dark text-decoration-none">avtarconstructions@gmail.com</a></p>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i><a href="tel:07714423740" class="text-dark text-decoration-none">07714423740</a></p>
+                    <p class="mb-0"><i class="fas fa-envelope me-2"></i><a href="mailto:avtarconstructions@gmail.com" class="text-dark text-decoration-none">avtarconstructions@gmail.com</a></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn" style="background:var(--amber-500);" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        const form = document.getElementById('contact-form');
-        const successModal = new bootstrap.Modal(document.getElementById('successModal'));
-
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            const formData = new FormData(form);
-            const object = Object.fromEntries(formData);
-            const json = JSON.stringify(object);
-
-            fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: json
-            })
-                .then(async (response) => {
-                    let json = await response.json();
-                    if (response.status == 200) {
-                        // Show the success modal
-                        successModal.show();
-                        // Reset the form
-                        form.reset();
-                    } else {
-                        console.log(response);
-                        // Don't use alert, perhaps show an error message on the page
-                        const errorDiv = document.createElement('div');
-                        errorDiv.className = 'alert alert-danger mt-3';
-                        errorDiv.textContent = 'Something went wrong. Please try again.';
-                        form.prepend(errorDiv);
-                    }
-                })
-                .catch(error => {
-                    console.log(error);
-                    // Don't use alert, perhaps show an error message on the page
-                    const errorDiv = document.createElement('div');
-                    errorDiv.className = 'alert alert-danger mt-3';
-                    errorDiv.textContent = 'Something went wrong. Please try again.';
-                    form.prepend(errorDiv);
-                });
-        });
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
